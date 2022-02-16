@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- nome site -->
     <title>BuzzQuiz</title>
+
+    <!-- estilos  -->
     <link rel="stylesheet" href="estilos/reset.css">
     <link rel="stylesheet" href="estilos/estilo.css">
     <link rel="stylesheet" href="estilos/estiloTela1.css">
@@ -13,13 +23,57 @@
 </head>
 
 <body>
-    
+
     <main class="tela1">
 
     </main>
 
     <main class="tela2">
-
+        <header>BuzzQuizz</header>
+        <main class="quiz">
+            <!-- Nome do quiz com a imagem de fundo -->
+            <figure class="titulo-quiz">
+                <img src="imagens/imagens-tela2/hogwart.svg" />
+                <p>O quão Potterhead é você?</p>
+            </figure>
+            <!-- Uma pergunta do quiz -->
+            <section class="pergunta-quiz">
+                <div class="titulo-pergunta">Em qual animal Olho-Tonto Moody transfigurou Malfoy</div>
+                <section class="bloco-imagens">
+                    <div class="imagens-linha1">
+                        <figure>
+                            <img src="imagens/imagens-tela2/gatineo.svg" />
+                            <figcaption>Gatíneo</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="imagens/imagens-tela2/ratata.svg" />
+                            <figcaption>Ratata</figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="imagens/imagens-tela2/sapofgordo.svg" />
+                            <figcaption>Sapo Gordo</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="imagens/imagens-tela2/mustela.svg" />
+                            <figcaption>Mustela</figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </section>
+            <!-- Resultado Final do quiz -->
+            <section class="pergunta-quiz resultado-quiz">
+                <div class="titulo-pergunta">88% de acerto: Você é praticamente um aluno de Hogwarts!</div>
+                <section class="imagem-resultado">
+                    <img src="imagens/imagens-tela2/imgem-resultado.svg" />
+                    <p>Parabéns Potterhead! Bem-vindx a Hogwarts, aproveite o loop infinito de comida e clique no botão
+                        abaixo para usar o vira-tempo e reiniciar este teste.</p>
+                </section>
+            </section>
+            <button class="reinicar-quiz">Reiniciar Quiz</button>
+            <button class="voltar-home">Voltar para home</button>
+        </main>
     </main>
 
     <main class="tela3">
@@ -30,4 +84,5 @@
     <script src="js/scriptTela2.js"></script>
     <script src="js/scriptTela3.js"></script>
 </body>
+
 </html>
