@@ -1,0 +1,17 @@
+/* --- header "buzzquizz" --- */
+header{
+    width: 100vw;
+    height: 69px;
+    background-color: #EC362D;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 37px;
+    font-weight: 700;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
