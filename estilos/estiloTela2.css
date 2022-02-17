@@ -1,0 +1,144 @@
+
+.tela2 *{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tela2 .quiz{
+    margin-top: 69px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+}
+/* --- imagem com título do quiz ---*/
+.tela2 .titulo-quiz{
+    width: 100vw;
+    height: 142px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.tela2 .titulo-quiz p{
+    font-size: 19px;
+    font-weight: 400;
+    color: #ffffff;
+    position: absolute;
+}
+
+
+/* --- pergunta do quiz ---  */
+.tela2 .pergunta-quiz{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 28px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+
+.tela2 .titulo-pergunta{
+    background-color: #434CA0;
+    margin-bottom: 20px;
+    padding: 16px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 19px;
+}
+
+.tela2 .bloco-imagens  img{
+    width: 163px;
+    height: 113px;
+}
+
+.tela2 .bloco-imagens figcaption{
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 5px;
+    color: #000;
+}
+
+.tela2 .bloco-imagens div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tela2 .imagens-linha1{
+    margin-bottom: 12px;
+}
+
+
+/* --- resultado do quiz --- */
+
+.tela2 .pergunta-quiz p{
+    font-weight: 700;
+    font-size: 17px;
+    color: #484848;
+    margin-top: 9px;
+    line-height: 19,92px;
+}
+
+.tela2 button{
+    width: 220px;
+    height: 44px;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.tela2 .reinicar-quiz{
+    background-color: #EC362D;
+    color: #ffffff;
+}
+
+.tela2 .voltar-home{
+ background-color: #FAFAFA;
+ color: #818181;
+}
+
+
+
+
+@media (min-width: 1100px){
+    .tela2 .pergunta-quiz{
+        width: 759px;
+    }
+
+    .tela2 .titulo-pergunta{
+        padding: 50px;
+        font-size: 23px;
+    }
+
+    .tela2 .bloco-imagens  img{
+        width: 330px;
+        height: 175px;
+    }
+    
+    /* --- resultado do quiz ---  */
+
+    .tela2 .resultado-quiz section{
+        display: flex;
+        justify-content: space-between;
+    }
+    .tela2 p{
+        margin-left: 21px;
+        font-size: 19px;
+    }
+}
+
+
+
+
+
+
+
+

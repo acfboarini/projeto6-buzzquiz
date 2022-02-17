@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BuzzQuizz</title>
+    <!-- fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- nome site -->
+    <title>BuzzQuiz</title>
+
+    <!-- estilos  -->
+
     <link rel="stylesheet" href="estilos/reset.css">
-    <link rel="stylesheet" href="estilos/estilo.css">
     <link rel="stylesheet" href="estilos/estiloTela1.css">
     <link rel="stylesheet" href="estilos/estiloTela2.css">
     <link rel="stylesheet" href="estilos/estiloTela3.css">
+    <link rel="stylesheet" href="estilos/estilo.css">
 </head>
 
 <body>
-    
+    <header>BuzzQuizz</header>
     <main class="tela1">
         <header>
             <h1>BuzzQuizz</h1>
@@ -44,12 +51,69 @@
         </section>
     </main>
 
-    <main class="tela2">
-
+    <main class="tela2 escondido">
+        <main class="quiz">
+            <!-- Nome do quiz com a imagem de fundo -->
+            <figure class="titulo-quiz">
+                <img src="imagens/imagens-tela2/hogwart.svg" />
+                <p>O quão Potterhead é você?</p>
+            </figure>
+            <!-- Uma pergunta do quiz -->
+            <section class="pergunta-quiz">
+                <div class="titulo-pergunta">Em qual animal Olho-Tonto Moody transfigurou Malfoy</div>
+                <section class="bloco-imagens">
+                    <div class="imagens-linha1">
+                        <figure>
+                            <img src="imagens/imagens-tela2/gatineo.svg" />
+                            <figcaption>Gatíneo</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="imagens/imagens-tela2/ratata.svg" />
+                            <figcaption>Ratata</figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="imagens/imagens-tela2/sapofgordo.svg" />
+                            <figcaption>Sapo Gordo</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="imagens/imagens-tela2/mustela.svg" />
+                            <figcaption>Mustela</figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </section>
+            <!-- Resultado Final do quiz -->
+            <section class="pergunta-quiz resultado-quiz">
+                <div class="titulo-pergunta">88% de acerto: Você é praticamente um aluno de Hogwarts!</div>
+                <section class="imagem-resultado">
+                    <img src="imagens/imagens-tela2/imgem-resultado.svg" />
+                    <p>Parabéns Potterhead! Bem-vindx a Hogwarts, aproveite o loop infinito de comida e clique no botão
+                        abaixo para usar o vira-tempo e reiniciar este teste.</p>
+                </section>
+            </section>
+            <button class="reinicar-quiz">Reiniciar Quiz</button>
+            <button class="voltar-home">Voltar para home</button>
+        </main>
     </main>
 
     <main class="tela3">
+        <!-- tela 3.1 -->
+        <section class="tela3-1 escondido">
+            <p>Comece pelo começo</p>
+            <div>
+                <input type="text" placeholder="Título do seu quizz">
+                <input type="text" placeholder="URL da imagem do seu quizz">
+                <input type="text" placeholder="Quantidade de perguntas do quizz">
+                <input type="text" placeholder="Quantidade de níveis do quizz">
+            </div>
+            <button>Prosseguir para criar perguntas</button>
+        </section>
 
+        <!-- tela 3.2 -->
+        <section class="tela3-2 ">
+        </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -58,4 +122,5 @@
     <script src="js/scriptTela3.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
+
 </html>
