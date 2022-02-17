@@ -3,6 +3,7 @@ header{
     width: 100vw;
     height: 69px;
     background-color: #EC362D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
@@ -14,4 +15,8 @@ header{
     top: 0;
     left: 0;
     z-index: 5;
+}
+
+.escondido {
+    display: none;
 }

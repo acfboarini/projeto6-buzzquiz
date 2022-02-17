@@ -16,10 +16,10 @@
 
     <!-- estilos  -->
     <link rel="stylesheet" href="estilos/reset.css">
-    <link rel="stylesheet" href="estilos/estilo.css">
     <link rel="stylesheet" href="estilos/estiloTela1.css">
     <link rel="stylesheet" href="estilos/estiloTela2.css">
     <link rel="stylesheet" href="estilos/estiloTela3.css">
+    <link rel="stylesheet" href="estilos/estilo.css">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
 
     </main>
 
-    <main class="tela2">
+    <main class="tela2 escondido">
         <main class="quiz">
             <!-- Nome do quiz com a imagem de fundo -->
             <figure class="titulo-quiz">
@@ -76,7 +76,21 @@
     </main>
 
     <main class="tela3">
+        <!-- tela 3.1 -->
+        <section class="tela3-1 escondido">
+            <p>Comece pelo começo</p>
+            <div>
+                <input type="text" placeholder="Título do seu quizz">
+                <input type="text" placeholder="URL da imagem do seu quizz">
+                <input type="text" placeholder="Quantidade de perguntas do quizz">
+                <input type="text" placeholder="Quantidade de níveis do quizz">
+            </div>
+            <button>Prosseguir para criar perguntas</button>
+        </section>
 
+        <!-- tela 3.2 -->
+        <section class="tela3-2 ">
+        </section>
     </main>
 
     <script src="js/scriptTela1.js"></script>
