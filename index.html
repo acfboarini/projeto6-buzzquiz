@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BuzzQuiz</title>
+    <title>BuzzQuizz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos/reset.css">
     <link rel="stylesheet" href="estilos/estilo.css">
     <link rel="stylesheet" href="estilos/estiloTela1.css">
@@ -15,7 +18,30 @@
 <body>
     
     <main class="tela1">
+        <header>
+            <h1>BuzzQuizz</h1>
+        </header>
 
+        <section class="quizz no-quizz">
+            <article>
+                <p>Voce não criou nenhum quizz ainda :(</p>
+                <button onclick="criarQuizz()" data-identifier="create-quizz">Criar Quizz</button>
+            </article>
+        </section>
+
+        <section class="quizz user-quizzes" data-identifier="user-quizzes">
+            <section class="topo">
+                <h2>Seus Quizzes</h2>
+                <button onclick="criarQuizz()" data-identifier="create-quizz"><ion-icon name="add-circle"></ion-icon></button>
+            </section>
+
+            <section class="lista-quizzes"></section>
+        </section>
+
+        <section class="quizz general-quizzes" data-identifier="general-quizzes">
+            <h2>Todos os Quizzes</h2>
+            <section class="lista-quizzes"></section>
+        </section>
     </main>
 
     <main class="tela2">
@@ -26,8 +52,10 @@
 
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/scriptTela1.js"></script>
     <script src="js/scriptTela2.js"></script>
     <script src="js/scriptTela3.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>

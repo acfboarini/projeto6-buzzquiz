@@ -1,0 +1,140 @@
+.tela1 {
+    font-weight: 400;
+    --vermelho: #EC362D;
+}
+
+.tela1 header {
+    width: 375px;
+    height: 69px;
+    background: var(--vermelho);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.tela1 h1 {
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.tela1 .quizz {
+    width: 340px;
+    margin: 0 auto;
+    margin-top: 31px;
+}
+
+/******* Inicio formatacao qnd usuario n tem quizz *******/
+
+.tela1 .no-quizz article {
+    background: #FAFAFA;
+    height: 181px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 45px;
+    border: 1px dashed #D5D5D5;
+    border-radius: 5px;
+}
+
+.tela1 .no-quizz p {
+    font-size: 20px;
+    text-align: center;
+    color: #B9B9B9;
+}
+
+.tela1 .no-quizz article button {
+    width: 151px;
+    height: 40px;
+    background-color: #FAFAFA;
+    border: 1px dashed var(--vermelho);
+    box-sizing: border-box;
+    border-radius: 50px;
+    color: var(--vermelho);
+    font-size: 21px;
+}
+
+/********* Inicio formatacao qnd usuario tem quizz *********/
+
+.tela1 .quizz h2 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.tela1 .quizz .quizz-card{
+    width: 340px;
+    height: 181px;
+    border-radius: 5px;
+}
+
+.tela1 .quizz .topo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tela1 .topo button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: whitesmoke;
+}
+
+.tela1 .topo ion-icon {
+    color: var(--vermelho);
+    font-size: 30px;
+    position: relative;
+    bottom: 0px;
+    right: 5px;
+}
+
+.tela1 .quizz-card {
+    margin-top: 15px;
+}
+
+.tela1 .quizz-card p {
+    color: white;
+    position: relative;
+    left: 17px;
+    top: 127px;
+    font-size: 19px;
+}
+
+/********* Fim formatacao qnd usuario tem quizz *********/
+
+@media (min-width: 1100px) {
+
+    .tela1 header {
+        width: 1440px;
+    }
+
+    .tela1 {
+        width: 1440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tela1 .quizz{
+        width: 1051px;
+        margin-top: 45px;
+    }
+
+    .tela1 .quizz .topo {
+        width: 170px;
+    }
+
+    .tela1 .quizz .lista-quizzes {
+        width: 1065px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tela1 .quizz .quizz-card {
+        margin-right: 15px;
+    }
+}
