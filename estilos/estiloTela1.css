@@ -1,23 +1,9 @@
-.tela1 {
+.tela1 *{
     font-weight: 400;
-    --vermelho: #EC362D;
 }
 
-.tela1 header {
-    width: 375px;
-    height: 69px;
-    background: var(--vermelho);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.tela1 h1 {
-    color: white;
-    font-size: 26px;
-    font-weight: 700;
+.tela1 {
+    margin-top: 100px;
 }
 
 .tela1 .quizz {
@@ -41,6 +27,7 @@
 }
 
 .tela1 .no-quizz p {
+    width: 240px;
     font-size: 20px;
     text-align: center;
     color: #B9B9B9;
@@ -113,7 +100,6 @@
     }
 
     .tela1 {
-        width: 1440px;
         display: flex;
         flex-direction: column;
         align-items: center;

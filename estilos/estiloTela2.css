@@ -1,9 +1,3 @@
-
-.tela2 *{
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
 .tela2 .quiz{
     margin-top: 69px;
     display: flex;
