@@ -1,5 +1,7 @@
-.tela2 .quiz{
+.tela2 {
     margin-top: 69px;
+}
+.tela2 .quiz{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,7 +11,6 @@
 /* --- imagem com título do quiz ---*/
 .tela2 .titulo-quiz{
     width: 100vw;
-    height: 142px;
     position: relative;
     display: flex;
     align-items: center;
@@ -17,11 +18,27 @@
     margin-bottom: 24px;
 }
 
+
+.tela2 .titulo-quiz img{
+    width: 100vw;
+    height: 142px;
+}
+
+
+
 .tela2 .titulo-quiz p{
+    width: 100vw;
+    height: 142px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 19px;
     font-weight: 400;
     color: #ffffff;
     position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+
 }
 
 
@@ -46,6 +63,12 @@
     font-size: 19px;
 }
 
+.tela2 .bloco-imagens{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .tela2 .bloco-imagens  img{
     width: 163px;
     height: 113px;
@@ -55,17 +78,8 @@
     font-size: 13px;
     font-weight: 700;
     margin-top: 5px;
+    margin-bottom: 10px;
     color: #000;
-}
-
-.tela2 .bloco-imagens div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.tela2 .imagens-linha1{
-    margin-bottom: 12px;
 }
 
 
