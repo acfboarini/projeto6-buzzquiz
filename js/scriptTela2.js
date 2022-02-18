@@ -1,19 +1,19 @@
-/*const LINK_API = `https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes`;
+const LINK_API = `https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes`;
 
-// let promiseApi = axios.get(LINK_API);
+let promiseApi = axios.get(LINK_API);
 promiseApi.catch(erro => console.error(erro))
 promiseApi.then(ObjetoRecebido);
 
 /* --- Recebe o objeto ---*/
-/*function ObjetoRecebido(respostaServidor) {
+function ObjetoRecebido(respostaServidor) {
     console.log(respostaServidor.data);
-    desmontarObjeto(respostaServidor.data[27]) // pegando um quiz qualquer
+    desmontarObjeto(respostaServidor.data[48]) // pegando um quiz qualquer
     renderizarTituloQuiz();
 }
 
 
 /* --- Coloca os itens do objeto em variaveis ---*/
-/*let id, titulo, imagem, niveis, perguntas;
+let id, titulo, imagem, niveis, perguntas;
 function desmontarObjeto(objetoServidor) {
     id = objetoServidor.id;
     titulo = objetoServidor.title;
@@ -23,7 +23,7 @@ function desmontarObjeto(objetoServidor) {
 }
 
 /* --- Coloca os itens do objeto PERGUNTAS em variaveis ---*/
-/*let perguntaTitulo, perguntaCor, respostas;
+let perguntaTitulo, perguntaCor, respostas;
 function desmontarPerguntas(pergunta) {
     perguntaTitulo = pergunta.title;
     perguntaCor = pergunta.color;
@@ -31,7 +31,7 @@ function desmontarPerguntas(pergunta) {
     renderizarPerguntasQuiz(perguntaTitulo, perguntaCor, respostas);
 }
 /* --- Coloca os itens do objeto RESPOSTA em variaveis ---*/
-/*let respostaTexto, respostaImagem, respostaECorreta;
+let respostaTexto, respostaImagem, respostaECorreta;
 function desmontarRespostas(resposta) {
     respostaTexto = resposta.text;
     respostaImagem = resposta.image;
@@ -39,7 +39,7 @@ function desmontarRespostas(resposta) {
     renderizarRespostas(respostaTexto, respostaImagem, respostaECorreta);
 }
 /* --- Renderiza o título do quiz com a imagem de fundo ---*/
-/*function renderizarTituloQuiz() {
+function renderizarTituloQuiz() {
     const mainTela2 = document.querySelector(".tela2");
     mainTela2.innerHTML = `
         <main class="quiz">
@@ -54,7 +54,7 @@ function desmontarRespostas(resposta) {
 }
 
 /* --- Renderiza as perguntas do quiz ---*/
-/*function renderizarPerguntasQuiz(tituloPergunta, corPergunta,respostas) {
+function renderizarPerguntasQuiz(tituloPergunta, corPergunta,respostas) {
 
     const mainQuiz = document.querySelector(".tela2 .quiz");
     mainQuiz.innerHTML += `
@@ -69,20 +69,17 @@ function desmontarRespostas(resposta) {
 }
 
 /* --- Era pra renderizar as respostas de acordo com as perguntas ---*/
-/*function renderizarRespostas(texto, imagem, isCorret){
+function renderizarRespostas(texto, imagem, isCorret){
     console.log(texto) // consigo receber as respostas normalmente
 
-
-    /*--- testei da forma que a gente fazia mas não deu certo ---*/
-    
-    // let elemento = document.querySelector(".bloco-imagens");
-    // elemento.innerHTML += `
-    //     <figure onclick="clickNaResposta(this)">
-    //         <img src=${imagem} />
-    //         <figcaption>${texto}</figcaption>
-    //     </figure>
-    // `
-//}
+    let elemento = document.querySelector(".bloco-imagens");
+    elemento.innerHTML += `
+        <figure onclick="clickNaResposta(this)">
+            <img src=${imagem} />
+            <figcaption>${texto}</figcaption>
+        </figure>
+    `
+}
 
 function clickNaResposta(elemento) {
     console.log(elemento);

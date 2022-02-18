@@ -53,41 +53,49 @@
         </section>
     </main>
 
-    <main class="tela2 escondido">
+    <main class="tela2">
 
     </main>
 
     <main class="tela3">
         <!-- tela 3.1 -->
-        <section class="tela3-1">
+        <section class="tela3-1" style="display: none;">
             <h1>Comece pelo começo</h1>
             <article>
                 <div>
-                    <input type="text" placeholder="Título do seu quizz" class="primeiro">
-                    <input type="text" placeholder="URL da imagem do seu quizz">
-                    <input type="text" placeholder="Quantidade de perguntas do quizz">
-                    <input type="text" placeholder="Quantidade de níveis do quizz">
+                    <input type="text" placeholder="Título do seu quizz" class="titulo primeiro" >
+                    <input type="url" placeholder="URL da imagem do seu quizz" class="url" >
+                    <input type="number" placeholder="Quantidade de perguntas do quizz" class="pergunta">
+                    <input type="number" placeholder="Quantidade de níveis do quizz" class="nivel">
                 </div>
             </article>
-            <button>Prosseguir para criar perguntas</button>
+            <button onclick="prosseguirParaPerguntas()">Prosseguir para criar perguntas</button>
         </section>
 
         <!-- tela 3.2 -->
-        <section class="tela3-2">
+        <section class="tela3-2" style="display: none;">
             <h1>Comece pelo começo</h1>
             <article>
                 <h2>Pergunta 1</h2>
-                <div style="display: none;">
+                <div>
                     <input type="text" placeholder="Título do seu quizz">
                     <input type="text" placeholder="URL da imagem do seu quizz">
-                    <input type="text" placeholder="Quantidade de perguntas do quizz">
-                    <input type="text" placeholder="Quantidade de níveis do quizz">
+                </div>
+                <h3>Resposta Correta </h3>
+                <div>
+                    <input type="text" placeholder="Resposta Correta 1">
+                    <input type="text" placeholder="URL da imagem 1">
+                </div>
+                <h3>Respostas Incorretas</h3>
+                <div>
+                    <input type="text" placeholder="Resposta Incorreta 1">
+                    <input type="text" placeholder="URL da imagem 1">
                 </div>
             </article>
 
             <article>
                 <h2>Pergunta 2</h2>
-                <div>
+                <div style="display: none;">
                     <input type="text" placeholder="Título do seu quizz">
                     <input type="text" placeholder="URL da imagem do seu quizz">
                     <input type="text" placeholder="Quantidade de perguntas do quizz">
@@ -97,7 +105,7 @@
         </section>
 
         <!-- tela 3.3 -->
-        <section class="tela3-3">
+        <!-- <section class="tela3-3 ">
             <h1>Comece pelo começo</h1>
             <article>
                 <h2>Pergunta 2</h2>
@@ -108,15 +116,15 @@
                     <input type="text" placeholder="Quantidade de níveis do quizz">
                 </div>
             </article>
-        </section>
+        </section> -->
 
         <!-- tela 3.4 -->
-        <section class="tela3-4">
+        <!-- <section class="tela3-4">
             <h1>Finalizando</h1>
             <div><p>O quao Potterhead voce é?</p></div>
             <button class="acesso-quizz">Acessar Quizz</button>
             <button class="voltar">Voltar pra home</button>
-        </section>
+        </section> -->
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
