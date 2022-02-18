@@ -1,12 +1,7 @@
+/******** tela 3 - geral ******/
 
-/* --- tela 3.1 --- */
-
-.tela3-1 *{
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    
-}
-.tela3-1{ 
+.tela3 {
+    margin-top: 100px;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -15,31 +10,50 @@
     background-color: #FAFAFA;
 }
 
-.tela3-1 p{
-    font-weight: 700;
-    font-size: 20px;
-    color: #000;
-    margin-top: 106px;
-}
-
-.tela3-1 div{
-    padding: 20px 9px;
+.tela3 section {
+    width: 375px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 29px;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 27px;
 }
 
-.tela3-1 div input{
+.tela3 h1, h2 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+}
+
+.tela3 h1 {
+    margin-bottom: 29px;
+}
+
+.tela3 article {
+    width: 375px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    padding: 21px 16px;
+    margin-bottom: 22px;
+}
+
+.tela3 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tela3 div input{
     all: unset;
-    width: 341px;
+    width: 327px;
     height: 46px;
     border: 1px solid #D1D1D1;
     padding-left: 14px;
     border-radius: 5px;
-    margin-bottom: 9px;
+    margin-top: 14px;
+}
+
+.tela3 div input.primeiro {
+    margin: 0;
 }
 
 div input::placeholder{
@@ -47,31 +61,39 @@ div input::placeholder{
     color: #BABABA;
 }
 
-
-.tela3-1 button{
-    width: 323px;
-    height: 54px;
+.tela3 button{
+    padding: 15px 30px;
     border-radius: 15px;
     border: none;
     color: #FFF5F4;
     font-weight: 400;
     font-size: 18px;
     background-color: #EC362D;
-
-    margin-top: 29px;
-    margin-bottom: 8px;
 }
 
+.tela3 button.acesso-quizz {
+    margin-top: 22px;
+}
 
-/* --- tela 3.2 ---- */
+.tela3 button.voltar {
+    margin: 22px 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    color: #818181;
+}
 
-.tela3-2{
-    
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: #FAFAFA; */
-    background-color: red;
+.tela3-4 div {
+    width: 340px;
+    height: 181px;
+    position: relative;
+    border-radius: 5px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 65.62%, rgba(0, 0, 0, 0.8) 100%), url("../images/castelo.png");
+}
+
+.tela3-4 div p {
+    color: white;
+    position: absolute;
+    left: 17px;
+    top: 127px;
+    font-size: 19px;
 }

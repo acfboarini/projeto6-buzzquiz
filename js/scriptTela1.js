@@ -16,7 +16,6 @@ function renderizarQuizzes(lista_quizzes) {
         </article>
         `;
         adicionarImagemDeFundo(i, lista_quizzes[i]);
-
     }
 }
 

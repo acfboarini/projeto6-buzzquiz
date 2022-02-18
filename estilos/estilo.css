@@ -5,7 +5,7 @@
 }
 
 body {
-    background: whitesmoke;
+    background: #FAFAFA;
 }
 
 /* --- header "buzzquizz" --- */
@@ -20,7 +20,6 @@ header {
     margin: 0 auto;
     position: fixed;
     top: 0;
-    /* right: calc(50vw - 187.5px); */
     z-index: 5;
 }
 
