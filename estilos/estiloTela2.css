@@ -75,7 +75,9 @@
 }
 
 .tela2 .bloco-imagens figcaption{
+    width: 163px;
     font-size: 13px;
+    word-break: break-word;
     font-weight: 700;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -129,6 +131,10 @@
     .tela2 .bloco-imagens  img{
         width: 330px;
         height: 175px;
+    }
+
+    .tela2 .bloco-imagens figcaption{
+        width: 330px;
     }
     
     /* --- resultado do quiz ---  */
