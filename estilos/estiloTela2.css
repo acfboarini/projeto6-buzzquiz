@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 .tela2 {
     margin-top: 69px;
 }
@@ -19,11 +22,11 @@
 }
 
 
-.tela2 .titulo-quiz img{
+.tela2 .titulo-quiz .imagem{
     width: 100vw;
     height: 142px;
+    position: relative;
 }
-
 
 
 .tela2 .titulo-quiz p{
@@ -31,13 +34,14 @@
     height: 142px;
     text-align: center;
     display: flex;
+    padding: 15px;
+    word-break: break-word;
     justify-content: center;
     align-items: center;
     font-size: 19px;
     font-weight: 400;
     color: #ffffff;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.6);
 
 }
 
@@ -58,6 +62,7 @@
     background-color: #434CA0;
     margin-bottom: 20px;
     padding: 16px;
+    word-break: break-word;
     color: #ffffff;
     text-align: center;
     font-size: 19px;
@@ -69,7 +74,14 @@
     flex-wrap: wrap;
 }
 
-.tela2 .bloco-imagens  img{
+.tela2 .bloco-imagens figure{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.tela2 .bloco-imagens div{
     width: 163px;
     height: 113px;
 }
@@ -81,7 +93,15 @@
     font-weight: 700;
     margin-top: 5px;
     margin-bottom: 10px;
-    color: #000;
+    position: relative;
+}
+
+.texto-vermelho{
+    color: red;
+}
+
+.texto-verde{
+    color: green;
 }
 
 
@@ -105,6 +125,11 @@
     font-size: 18px;
 }
 
+.tela2 .imagem-resultado img{
+    width: 335px;
+    height: 255px;
+}
+
 .tela2 .reinicar-quiz{
     background-color: #EC362D;
     color: #ffffff;
@@ -117,18 +142,17 @@
 
 
 
-
 @media (min-width: 1100px){
     .tela2 .pergunta-quiz{
         width: 759px;
     }
 
     .tela2 .titulo-pergunta{
-        padding: 50px;
+        padding: 30px;
         font-size: 23px;
     }
 
-    .tela2 .bloco-imagens  img{
+    .tela2 .bloco-imagens div{
         width: 330px;
         height: 175px;
     }
@@ -138,13 +162,21 @@
     }
     
     /* --- resultado do quiz ---  */
+    .tela2 .resultado-quiz .titulo-pergunta{
+        padding: 20px;
+    }
+    .tela2 .imagem-resultado img{
+        width: 364px;
+        height: 273px;
+    }
 
     .tela2 .resultado-quiz section{
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
     }
     .tela2 p{
         margin-left: 21px;
         font-size: 19px;
+        word-break: break-word;
     }
 }
