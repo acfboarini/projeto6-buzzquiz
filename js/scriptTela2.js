@@ -4,14 +4,17 @@ let qntClick = 0;
 let qntAcertos = 0;
 let posicaoScroll = []; // recebe as coordenadas do scroll em cada pergunta
 
-let promiseApi = axios.get(LINK_API);
-promiseApi.catch(erro => console.error(erro))
-promiseApi.then(ObjetoRecebido);
+/* --- função chamada na tela1 passando o id do quiz--- */
+function carregarQuizEspecifico(ID){
+    let promiseApi = axios.get(`${LINK_API}/${ID}`);
+    promiseApi.catch(erro => console.error(erro))
+    promiseApi.then(ObjetoRecebido);
+}
 
 /* --- Recebe o objeto ---*/
 let objetoEspecifico = {};
 function ObjetoRecebido(respostaServidor) {
-    objetoEspecifico = respostaServidor.data[40] // Alterar posteriormente"
+    objetoEspecifico = respostaServidor.data // Alterar posteriormente"
     carregarTela(objetoEspecifico);
 }
 /* --- Carrega toda a tela com o objeto do servidor --- */
@@ -298,4 +301,18 @@ function resetarVariaveisEElementos(){
 
 function voltarHome() {
     // voltar para o menu
+    esconderTela2()
+
+}
+
+function esconderTela2(){
+    const tela1 = document.querySelector('main.tela2');
+    tela1.classList.add('escondido');
+    const tela2 = document.querySelector('main.tela1');
+    tela2.classList.remove('escondido')
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    });
 }

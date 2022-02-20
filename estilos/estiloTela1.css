@@ -3,6 +3,7 @@
 }
 
 .tela1 {
+    width: 100vw;
     margin-top: 100px;
 }
 
@@ -80,16 +81,19 @@
 }
 
 .tela1 .quizz-card {
+    position: relative;
     margin-top: 15px;
 }
 
 .tela1 .quizz-card p {
     color: white;
-    position: relative;
+    word-break: break-word;
+    position: absolute;
     left: 17px;
     top: 127px;
     font-size: 19px;
 }
+ 
 
 /********* Fim formatacao qnd usuario tem quizz *********/
 

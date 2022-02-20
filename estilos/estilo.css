@@ -35,8 +35,7 @@ header h1 {
     header {
         left: 0px;
         right: 0px;
-        width: 100%;
-        max-width: 1440px;
+        width: 100vw;
     }
 }
 
