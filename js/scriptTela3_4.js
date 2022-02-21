@@ -1,0 +1,7 @@
+function acessarQuizz() {
+
+}
+
+function voltarParaHome() {
+
+}

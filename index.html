@@ -27,7 +27,7 @@
         <h1>BuzzQuizz</h1>
     </header>
     
-    <main class="tela1 escondido">
+    <main class="tela1">
         <!-- secao que aparece quando usuario nao criou nenhum quizz -->
         <section class="quizz no-quizz">
             <article>
@@ -53,15 +53,14 @@
         </section>
     </main>
 
-    <main class="tela2">
-
+    <main class="tela2 escondido">
     </main>
 
     <main class="tela3 escondido">
         <!-- tela 3.1 -->
-        <section class="tela3-1" style="display: none;">
+        <section class="tela3-1 escondido">
             <h1>Comece pelo começo</h1>
-            <article>
+            <article class="container">
                 <div>
                     <input type="text" placeholder="Título do seu quizz" class="titulo primeiro" >
                     <input type="url" placeholder="URL da imagem do seu quizz" class="url" >
@@ -73,63 +72,32 @@
         </section>
 
         <!-- tela 3.2 -->
-        <section class="tela3-2"  style="display: none;">
-            <h1>Comece pelo começo</h1>
-            <article>
-                <h2>Pergunta 1</h2>
-                <div>
-                    <input type="text" placeholder="Título do seu quizz">
-                    <input type="text" placeholder="URL da imagem do seu quizz">
-                </div>
-                <h3>Resposta Correta </h3>
-                <div>
-                    <input type="text" placeholder="Resposta Correta 1">
-                    <input type="text" placeholder="URL da imagem 1">
-                </div>
-                <h3>Respostas Incorretas</h3>
-                <div>
-                    <input type="text" placeholder="Resposta Incorreta 1">
-                    <input type="text" placeholder="URL da imagem 1">
-                </div>
-            </article>
-
-            <article>
-                <h2>Pergunta 2</h2>
-                <div style="display: none;">
-                    <input type="text" placeholder="Título do seu quizz">
-                    <input type="text" placeholder="URL da imagem do seu quizz">
-                    <input type="text" placeholder="Quantidade de perguntas do quizz">
-                    <input type="text" placeholder="Quantidade de níveis do quizz">
-                </div>
-            </article>
+        <section class="tela3-2 escondido">
+            <h1>Crie suas perguntas</h1>
         </section>
 
         <!-- tela 3.3 -->
-        <section class="tela3-3" style="display: none;">
-            <h1>Comece pelo começo</h1>
-            <article>
-                <h2>Pergunta 2</h2>
-                <div>
-                    <input type="text" placeholder="Título do seu quizz">
-                    <input type="text" placeholder="URL da imagem do seu quizz">
-                    <input type="text" placeholder="Quantidade de perguntas do quizz">
-                    <input type="text" placeholder="Quantidade de níveis do quizz">
-                </div>
-            </article>
+        <section class="tela3-3 escondido">
+            <h1>Agora, decida os níveis!</h1>
         </section>
-
+        
         <!-- tela 3.4 -->
-        <!-- <section class="tela3-4">
-            <h1>Finalizando</h1>
+        
+        <section class="tela3-4 escondido">
+            <h1>Seu Quizz esta pronto!</h1>
             <div><p>O quao Potterhead voce é?</p></div>
-            <button class="acesso-quizz">Acessar Quizz</button>
-            <button class="voltar">Voltar pra home</button>
-        </section> -->
+            <button class="acesso-quizz" onclick="acessarQuizz()">Acessar Quizz</button>
+            <button class="voltar" onclick="voltarParaHome()">Voltar pra home</button>
+        </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/scriptTela1.js"></script>
     <script src="js/scriptTela2.js"></script>
+    <script src="js/scriptTela3_1.js"></script>
+    <script src="js/scriptTela3_2.js"></script>
+    <script src="js/scriptTela3_3.js"></script>
+    <script src="js/scriptTela3_4.js"></script>
     <script src="js/scriptTela3.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
