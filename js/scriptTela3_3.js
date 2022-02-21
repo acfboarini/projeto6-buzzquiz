@@ -3,8 +3,8 @@ function renderizaLevels() {
 
     for(let i = 0; i < qntLevels; i++){
         section.innerHTML += `
-            <article class="level${i+1} container"  onclick="ocultar(this)">
-                <article>
+            <article class="level${i+1} container">
+                <article  onclick="ocultar(this)">
                     <h2>Nivel ${i+1}</h2>
                     <ion-icon name="create-outline"></ion-icon>
                 </article>

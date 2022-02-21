@@ -1,7 +1,3 @@
 function acessarQuizz() {
 
 }
-
-function voltarParaHome() {
-
-}

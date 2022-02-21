@@ -3,8 +3,8 @@ function renderizaPerguntas() {
 
     for(let i = 0; i < qntPerguntas; i++){
         section.innerHTML += `
-            <article class="pergunta${i+1} container" onclick="ocultar(this)">
-                <article>
+            <article class="pergunta${i+1} container">
+                <article onclick="ocultar(this)">
                     <h2>Pergunta ${i+1}</h2>
                     <ion-icon name="create-outline"></ion-icon>
                 </article>
@@ -175,10 +175,10 @@ function validarRespostas(respostas) {
 
 /***** funcao do clique na pergunta para ocultar ******/
 function ocultar(article) {
-    if(article.children[1].classList.contains("escondido")){
-        article.children[1].classList.remove("escondido");
+    if(article.parentNode.children[1].classList.contains("escondido")){
+        article.parentNode.children[1].classList.remove("escondido");
     }else{
-        article.children[1].classList.add("escondido");
+        article.parentNode.children[1].classList.add("escondido");
     }
 }
 

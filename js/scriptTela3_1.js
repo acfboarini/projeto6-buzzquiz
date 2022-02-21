@@ -46,5 +46,4 @@ const tela3_4 = document.querySelector(".tela3-4");
 
 let tituloQuiz = null;
 let urlImagem = null;
-let qntPerguntas = 0;
 let qntLevels = 0;
